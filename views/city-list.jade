@@ -46,7 +46,7 @@ html
                                         th State
                                 tbody
                                     each city, i in cities
-                                        tr
+                                        tr(cityIndex="#{i}")
                                             td #{city.city)
                                             td #{city.loc}
                                             td #{city.pop}
@@ -65,3 +65,25 @@ html
             //
                Include all compiled plugins (below), or include individual files as needed
             script(src='/assets/js/bootstrap.min.js')
+            script(type='text/javascript')
+                $(document).ready(function(){
+                    $(window).data('ajaxready', true).scroll(function(e) {
+                        if ($(window).data('ajaxready') == false) return;
+                        if ($(window).scrollTop() >= ($(document).height() - $(window).height())) {
+                            var lastCityIndex = $("tr").last().attr("cityIndex");
+                            $(window).data('ajaxready', false);
+                            $.ajax({
+                                cache: false,
+                                url: "/city/loadCity/"+lastCityIndex,
+                                success: function(html) {
+                                    if (html) {
+                                        $("tbody").append(html);
+                                    } else {
+                                        alert("Error")
+                                    }
+                                    $(window).data('ajaxready', true);
+                                }
+                            });
+                        }
+                    });
+                });

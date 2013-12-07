@@ -30,6 +30,26 @@ CityController = function (app, mongoose, config) {
             }
         });
     });
+
+    app.get('/city/loadCity/:index/?', function(req, res, next) {
+        util.log(req.method + " request to url : " + req.route.path);
+        var query = City.find({}).sort({'createDate': -1}).skip(index).limit(30);
+        query.execFind(function(err, cities) {
+            if (!err) {
+                res.render('city-list', {
+                    title: "Cities",
+                    cities: cities,
+                    
+                });
+            } else {
+                res.status(500);
+                res.render('500', {
+                    err: err,
+                    url: req.url
+                });
+            }
+        });
+    });
 }
 
 module.exports = CityController;

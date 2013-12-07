@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="024c2c55-6853-48ad-9cea-fe3013a4154a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/City.js" afterPath="$PROJECT_DIR$/models/City.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CityController.js" afterPath="$PROJECT_DIR$/controllers/CityController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/city-list.jade" afterPath="$PROJECT_DIR$/views/city-list.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/runtime.json" afterPath="$PROJECT_DIR$/config/runtime.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/movie-list.html" afterPath="$PROJECT_DIR$/public/assets/movie-list.html" />
     </list>
     <ignored path="nodejs-lazyload.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +57,24 @@
       <file leaf-file-name="city-list.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/city-list.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="59" selection-start="2313" selection-end="2313" vertical-scroll-proportion="-20.92" vertical-offset="413" max-vertical-offset="1314">
+            <state line="77" column="57" selection-start="3524" selection-end="3524" vertical-scroll-proportion="-25.96" vertical-offset="737" max-vertical-offset="1710">
+              <folding>
+                <marker date="1386427586924" expanded="true" signature="2917:3980" placeholder="{...}" />
+                <marker date="1386427586924" expanded="true" signature="2992:3960" placeholder="{...}" />
+                <marker date="1386427586924" expanded="true" signature="3166:3938" placeholder="{...}" />
+                <marker date="1386427586924" expanded="true" signature="3349:3910" placeholder="{&quot;cache&quot;: false...}" />
+                <marker date="1386427586924" expanded="true" signature="3523:3880" placeholder="{...}" />
+                <marker date="1386427586924" expanded="true" signature="3571:3675" placeholder="{...}" />
+                <marker date="1386427586924" expanded="true" signature="3681:3775" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie-list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/movie-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="8" selection-start="2435" selection-end="3511" vertical-scroll-proportion="-11.296296" vertical-offset="1027" max-vertical-offset="1908">
               <folding />
             </state>
           </provider>
@@ -67,7 +83,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="21" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
+            <state line="38" column="28" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
               <folding />
             </state>
           </provider>
@@ -85,7 +101,7 @@
       <file leaf-file-name="CityController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/CityController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="70" selection-start="600" selection-end="600" vertical-scroll-proportion="0.3171806" vertical-offset="0" max-vertical-offset="908">
+            <state line="41" column="20" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.7621145" vertical-offset="46" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -113,8 +129,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/config/development.json" />
         <option value="$PROJECT_DIR$/config/runtime.json" />
-        <option value="$PROJECT_DIR$/views/city-list.jade" />
         <option value="$PROJECT_DIR$/models/City.js" />
+        <option value="$PROJECT_DIR$/public/assets/movie-list.html" />
+        <option value="$PROJECT_DIR$/views/city-list.jade" />
         <option value="$PROJECT_DIR$/controllers/CityController.js" />
       </list>
     </option>
@@ -194,6 +211,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,13 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="21" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/development.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="1" selection-start="137" selection-end="137" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="252">
@@ -376,13 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/city-list.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="59" selection-start="2313" selection-end="2313" vertical-scroll-proportion="-20.92" vertical-offset="413" max-vertical-offset="1314">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/City.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="13" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
@@ -390,9 +397,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="28" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/movie-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="8" selection-start="2435" selection-end="3511" vertical-scroll-proportion="-11.296296" vertical-offset="1027" max-vertical-offset="1908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/city-list.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="57" selection-start="3524" selection-end="3524" vertical-scroll-proportion="-25.96" vertical-offset="737" max-vertical-offset="1710">
+          <folding>
+            <marker date="1386427586924" expanded="true" signature="2917:3980" placeholder="{...}" />
+            <marker date="1386427586924" expanded="true" signature="2992:3960" placeholder="{...}" />
+            <marker date="1386427586924" expanded="true" signature="3166:3938" placeholder="{...}" />
+            <marker date="1386427586924" expanded="true" signature="3349:3910" placeholder="{&quot;cache&quot;: false...}" />
+            <marker date="1386427586924" expanded="true" signature="3523:3880" placeholder="{...}" />
+            <marker date="1386427586924" expanded="true" signature="3571:3675" placeholder="{...}" />
+            <marker date="1386427586924" expanded="true" signature="3681:3775" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/CityController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="70" selection-start="600" selection-end="600" vertical-scroll-proportion="0.3171806" vertical-offset="0" max-vertical-offset="908">
+        <state line="41" column="20" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.7621145" vertical-offset="46" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>

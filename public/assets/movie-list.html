@@ -71,5 +71,30 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).data('ajaxready', true).scroll(function(e) {
+                    if ($(window).data('ajaxready') == false) return;
+
+                    if ($(window).scrollTop() >= ($(document).height() - $(window).height())) {
+                        var lastCityIndex = $("tr").last().attr("cityIndex");
+                        $(window).data('ajaxready', false);
+                        $.ajax({
+                            cache: false,
+                            url: "/city/loadCity/"+lastCityIndex,
+                            success: function(html) {
+                                if (html) {
+                                    $("tbody").append(html);
+                                } else {
+                                    alert("Error")
+                                }
+                                $(window).data('ajaxready', true);
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
   </body>
 </html>
