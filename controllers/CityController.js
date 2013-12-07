@@ -39,7 +39,7 @@ CityController = function (app, mongoose, config) {
                 res.render('city-list', {
                     title: "Cities",
                     cities: cities,
-                    
+
                 });
             } else {
                 res.status(500);

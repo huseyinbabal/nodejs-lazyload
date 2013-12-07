@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="024c2c55-6853-48ad-9cea-fe3013a4154a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CityController.js" afterPath="$PROJECT_DIR$/controllers/CityController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/city-list.jade" afterPath="$PROJECT_DIR$/views/city-list.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/movie-list.html" afterPath="$PROJECT_DIR$/public/assets/movie-list.html" />
-    </list>
+    <list default="true" id="024c2c55-6853-48ad-9cea-fe3013a4154a" name="Default" comment="" />
     <ignored path="nodejs-lazyload.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
