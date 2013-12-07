@@ -17,7 +17,7 @@ module.exports = function (mongoose) {
             type:String,
             required:true
         },
-        state:{
+        dummy:{
             type:Number,
             required:true
         },

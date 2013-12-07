@@ -9,12 +9,14 @@ CityController = function (app, mongoose, config) {
     /**
      * List recent blog posts
      */
-    app.get('/city/list/?', function(req, res, next) {
+    app.get('/city/list/:page/?', function(req, res, next) {
         util.log(req.method + " request to url : " + req.route.path);
-        var query = City.find({}).sort({'createDate': -1});
+        var offset = 0;
+        if (typeof req.params.page !== 'undefined')
+            offset = req.params.page*30;
+        var query = City.find({}).sort({'createDate': -1}).skip(offset).limit(30);
         query.execFind(function(err, cities) {
             if (!err) {
-                console.log(cities);
                 res.render('city-list', {
                     title: "Cities",
                     cities: cities
